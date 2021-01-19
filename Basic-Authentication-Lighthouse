@@ -1,0 +1,4 @@
+import requests
+from requests.auth import HTTPBasicAuth
+r=requests.get('https://rm-wst-us-mgr.netscout.com/', auth=HTTPBasicAuth('root', 'password'))
+print(r.status_code)
